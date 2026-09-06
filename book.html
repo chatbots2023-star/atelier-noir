@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Noir — Portfólio Editorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="nav">
+      <a class="logo" href="/book.html">ATELIER NOIR</a>
+      <nav>
+        <a href="#topo">Início</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+        <a href="/">Pix</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu">Menu</button>
+    </header>
+
+    <section class="hero" id="topo">
+      <div class="hero-copy">
+        <p class="eyebrow">Portfólio editorial · 2026</p>
+        <h1>Luz, sombra<br />e vermelho.</h1>
+        <p class="lede">
+          Ensaio artístico de moda e retrato. Imagens vestidas, cinematográficas,
+          pensadas para direção criativa, campanhas e collabs.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#galeria">Ver galeria</a>
+          <a class="btn ghost" href="/">Voltar ao Pix</a>
+        </div>
+      </div>
+      <figure class="hero-frame">
+        <img
+          src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80"
+          alt="Retrato editorial em studio, casaco preto e luz vermelha"
+        />
+        <figcaption>Look 01 · Studio Noir</figcaption>
+      </figure>
+    </section>
+
+    <section class="thanks" id="obrigado">
+      <p>
+        Obrigada. O Pix abriu esta página. O book é um ensaio editorial —
+        privado em espírito, visível com dignidade. A alegria começa aqui.
+      </p>
+    </section>
+
+    <section class="gallery-wrap" id="galeria">
+      <div class="section-head">
+        <h2>Galeria</h2>
+        <div class="filters" id="filters">
+          <button type="button" class="on" data-filter="all">Tudo</button>
+          <button type="button" data-filter="studio">Studio</button>
+          <button type="button" data-filter="rua">Rua</button>
+          <button type="button" data-filter="close">Close-up</button>
+          <label class="btn primary upload-btn">
+            Enviar fotos
+            <input id="photoUpload" type="file" accept="image/*" multiple hidden />
+          </label>
+        </div>
+        <p class="tiny" id="uploadStatus"></p>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <section class="carousel-wrap" id="destaques">
+      <div class="section-head">
+        <h2>Carrossel</h2>
+        <div class="carousel-nav">
+          <button type="button" id="prev" aria-label="Anterior">←</button>
+          <span id="slideLabel">1 / 20</span>
+          <button type="button" id="next" aria-label="Próximo">→</button>
+        </div>
+      </div>
+      <div class="carousel" id="carousel">
+        <img id="slideImg" alt="" />
+        <div class="slide-meta">
+          <strong id="slideTitle"></strong>
+          <span id="slideTag"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div>
+        <p class="eyebrow">A modelo</p>
+        <h2>Morena, cabelo longo,<br />vinte e três anos.</h2>
+        <p>
+          Direção de arte em preto e carmim. Looks de alfaiataria, seda e couro.
+          O ensaio fala de presença, silêncio e contraste.
+        </p>
+        <ul class="facts">
+          <li>Editorial fashion</li>
+          <li>Retrato em studio</li>
+          <li>Campanhas independentes</li>
+        </ul>
+      </div>
+      <blockquote>
+        “Cada foto é um convite para olhar com calma. Obrigada por estar aqui.”
+      </blockquote>
+    </section>
+
+    <section class="contact" id="contato">
+      <h2>Fale comigo</h2>
+      <form id="guestForm" class="guest">
+        <input id="guestName" type="text" placeholder="Seu nome" required />
+        <textarea id="guestMsg" rows="3" placeholder="Uma mensagem para o book..." required></textarea>
+        <button class="btn primary" type="submit">Enviar no mural</button>
+      </form>
+      <ul class="wall" id="wall"></ul>
+    </section>
+
+    <footer>
+      <span>Atelier Noir · portfólio artístico</span>
+      <a href="#topo">Voltar ao topo</a>
+    </footer>
+
+    <dialog id="lightbox">
+      <button type="button" id="closeLb" aria-label="Fechar">×</button>
+      <img id="lbImg" alt="" />
+      <p id="lbCap"></p>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

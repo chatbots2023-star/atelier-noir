@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Atelier Noir — Entrada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="gate-body">
+    <div class="grain" aria-hidden="true"></div>
+    <main class="gate split">
+      <figure class="gate-photo">
+        <img
+          src="/entrada.jpg"
+          alt="Morena de cabelo longo com vestido vermelho"
+        />
+        <figcaption>Vestido vermelho · cabelo longo</figcaption>
+      </figure>
+
+      <div class="gate-copy">
+        <p class="eyebrow">Atelier Noir · trabalho oculto</p>
+        <h1>Ela costura a luz quando a cidade dorme.</h1>
+
+        <div class="pix-card" id="pixCard">
+          <div class="pix-amount">R$ 19,99</div>
+          <p class="tiny" id="pixLoad">Gerando QR Code PushinPay...</p>
+          <div class="qr-wrap">
+            <img id="qrImg" class="qr-img" alt="QR Code Pix PushinPay" />
+          </div>
+          <label for="pixKey">Pix copia e cola</label>
+          <div class="copy-row">
+            <input id="pixKey" type="text" readonly placeholder="Aguardando código..." />
+            <button class="btn primary" id="copyPix" type="button">Copiar</button>
+          </div>
+          <p class="tiny" id="pixStatus"></p>
+          <p class="wait" id="waitLine">Pague e toque em conferir. O book abre na hora.</p>
+          <button class="btn ghost" id="checkPay" type="button">Já paguei — conferir</button>
+        </div>
+
+        <form class="gift-box" id="giftForm">
+          <p class="gift-title">Coloque aqui seu e-mail</p>
+          <p class="gift-copy">
+            Vou enviar alguns presentes e vou te chamar pelo seu nome.
+            Obrigado! Lindão.
+          </p>
+          <label for="giftName">Seu nome</label>
+          <input id="giftName" type="text" placeholder="Como posso te chamar?" required />
+          <label for="giftEmail">Seu e-mail</label>
+          <input id="giftEmail" type="email" placeholder="voce@email.com" required />
+          <button class="btn primary" type="submit">Guardar e-mail</button>
+          <p class="tiny" id="giftStatus"></p>
+        </form>
+
+        <div class="story">
+          <p>
+            Por trás de cada ensaio existe um turno invisível: provas de cor à
+            meia-noite, o casaco no cabide até acertar o vermelho, o silêncio
+            do studio quando a câmera ainda não disparou. Esse é o trabalho
+            oculto — o que não entra no feed, mas segura o book de pé.
+          </p>
+          <p>
+            Precisa da ajuda de cada um de vocês. Um Pix a partir de
+            <strong>R$ 19,99</strong> mantém o atelier aberto: aluguel da luz,
+            o próximo look, o tempo de quem posa e de quem revela.
+          </p>
+          <p class="joy">
+            A alegria vem depois desta página. Pague o Pix e a próxima porta se abre.
+          </p>
+        </div>
+        <p class="pix-note">
+          Pagamento processado por PushinPay. A galeria só abre com Pix confirmado.
+        </p>
+      </div>
+    </main>
+    <script type="module" src="/src/gate.js"></script>
+  </body>
+</html>
