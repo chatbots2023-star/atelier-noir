@@ -8,6 +8,14 @@ export default defineConfig(({ mode }) => {
   process.env.ACCESS_SECRET = process.env.ACCESS_SECRET || env.ACCESS_SECRET
 
   return {
+    build: {
+      rollupOptions: {
+        input: {
+          main: 'index.html',
+          book: 'book.html'
+        }
+      }
+    },
     server: {
       host: true,
       port: 5173,
