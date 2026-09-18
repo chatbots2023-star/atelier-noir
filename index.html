@@ -1,83 +1,130 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Atelier Noir — Entrada</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/styles.css" />
-  </head>
-  <body class="gate-body">
-    <div class="grain" aria-hidden="true"></div>
-    <main class="gate split">
-      <figure class="gate-photo">
-        <img
-          src="entrada.jpg"
-          alt="Morena de cabelo longo com vestido vermelho"
-        />
-        <figcaption>Vestido vermelho · cabelo longo</figcaption>
-      </figure>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luciana | Acesso exclusivo no Telegram</title>
+  <meta name="description" content="Libere o acesso ao grupo exclusivo da Luciana no Telegram. Pagou, entra na hora.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+  <div class="bg-overlay" aria-hidden="true"></div>
 
-      <div class="gate-copy">
-        <p class="eyebrow">Atelier Noir · trabalho oculto</p>
-        <h1>Ela costura a luz quando a cidade dorme.</h1>
-
-        <div class="pix-card" id="pixCard">
-          <div class="pix-amount">R$ 19,99</div>
-          <p class="tiny" id="pixLoad">Gerando QR Code PushinPay...</p>
-          <div class="qr-wrap">
-            <img id="qrImg" class="qr-img" alt="QR Code Pix PushinPay" />
-          </div>
-          <label for="pixKey">Pix copia e cola</label>
-          <div class="copy-row">
-            <input id="pixKey" type="text" readonly placeholder="Aguardando código..." />
-            <button class="btn primary" id="copyPix" type="button">Copiar</button>
-          </div>
-          <p class="tiny" id="pixStatus"></p>
-          <p class="wait" id="waitLine">Pague e toque em conferir. O book abre na hora.</p>
-          <button class="btn ghost" id="checkPay" type="button">Já paguei — conferir</button>
-        </div>
-
-        <form class="gift-box" id="giftForm">
-          <p class="gift-title">Coloque aqui seu e-mail</p>
-          <p class="gift-copy">
-            Vou enviar alguns presentes e vou te chamar pelo seu nome.
-            Obrigado! Lindão.
-          </p>
-          <label for="giftName">Seu nome</label>
-          <input id="giftName" type="text" placeholder="Como posso te chamar?" required />
-          <label for="giftEmail">Seu e-mail</label>
-          <input id="giftEmail" type="email" placeholder="voce@email.com" required />
-          <button class="btn primary" type="submit">Guardar e-mail</button>
-          <p class="tiny" id="giftStatus"></p>
-        </form>
-
-        <div class="story">
-          <p>
-            Por trás de cada ensaio existe um turno invisível: provas de cor à
-            meia-noite, o casaco no cabide até acertar o vermelho, o silêncio
-            do studio quando a câmera ainda não disparou. Esse é o trabalho
-            oculto — o que não entra no feed, mas segura o book de pé.
-          </p>
-          <p>
-            Precisa da ajuda de cada um de vocês. Um Pix a partir de
-            <strong>R$ 19,99</strong> mantém o atelier aberto: aluguel da luz,
-            o próximo look, o tempo de quem posa e de quem revela.
-          </p>
-          <p class="joy">
-            A alegria vem depois desta página. Pague o Pix e a próxima porta se abre.
-          </p>
-        </div>
-        <p class="pix-note">
-          Pagamento processado por PushinPay. A galeria só abre com Pix confirmado.
-        </p>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/danny.jpg" alt="Luciana" class="brand-photo">
+      <div>
+        <strong>Luciana</strong>
+        <span>119.174 membros</span>
       </div>
-    </main>
-    <script type="module" src="src/gate.js"></script>
-  </body>
+    </div>
+    <a class="tg-chip" href="https://t.me/dannyyof" target="_blank" rel="noopener">Telegram</a>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker">Conteudo exclusivo</p>
+      <h1>Pague e entre no grupo do Telegram na hora</h1>
+      <p class="lead">Acesso imediato ao canal da <strong>Luciana</strong>. Assim que o PIX for confirmado, voce e redirecionada automaticamente para o Telegram.</p>
+
+      <div class="warn" role="note">
+        <div class="warn-icon">!</div>
+        <div>
+          <strong>Aviso importante</strong>
+          <p>Baixe o aplicativo Telegram para ter acesso ao conteudo. Sem o app, o grupo nao abre no celular.</p>
+          <div class="store-row">
+            <a class="store-btn play" href="https://play.google.com/store/apps/details?id=org.telegram.messenger" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M3.18 2.25c.2-.22.5-.3.8-.22l16.6 6.4c.38.15.62.52.62.93s-.24.78-.62.93l-16.6 6.4c-.3.08-.6 0-.8-.22A1 1 0 0 1 3 16.3V3.7c0-.4.15-.76.18-1.45zM8 11.2l8.7-2.7L8 5.8v5.4z"/></svg>
+              Baixar na Play Store
+            </a>
+            <a class="store-btn apple" href="https://apps.apple.com/app/telegram-messenger/id686449807" target="_blank" rel="noopener">
+              App Store
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans" id="planos">
+      <article class="plan">
+        <p class="plan-tag">Mensal</p>
+        <h2>Acesso 30 dias</h2>
+        <p class="price"><span>R$</span>19<span>,90</span></p>
+        <ul>
+          <li>Entrada automatica no Telegram</li>
+          <li>Conteudo exclusivo do canal</li>
+          <li>Suporte via chat</li>
+        </ul>
+        <button type="button" data-plan="mensal">Comprar acesso</button>
+      </article>
+
+      <article class="plan featured">
+        <p class="plan-tag">Mais escolhido</p>
+        <h2>Acesso vitalicio</h2>
+        <p class="price"><span>R$</span>49<span>,90</span></p>
+        <ul>
+          <li>Entrada automatica no Telegram</li>
+          <li>Acesso sem renovacao</li>
+          <li>Todo o conteudo do canal</li>
+        </ul>
+        <button type="button" data-plan="vitalicio">Comprar agora</button>
+      </article>
+    </section>
+  </main>
+
+  <div class="modal" id="checkout" hidden>
+    <div class="modal-card">
+      <button class="close" type="button" id="closeCheckout" aria-label="Fechar">&times;</button>
+      <div id="stepPay">
+        <h3>Pagamento PIX</h3>
+        <p class="muted">Plano: <strong id="planName">Acesso vitalicio</strong> &middot; <strong id="planPrice">R$ 49,90</strong></p>
+        <p class="muted small" id="payHint">Escaneie o QR Code ou copie o codigo. Depois de pagar, o acesso e liberado e voce vai para o Telegram.</p>
+
+        <div class="qr-box" id="qrBox">
+          <div class="qr spinner" id="qrPlaceholder">Gerando PIX...</div>
+          <img class="qr-img" id="qrImg" alt="QR Code PIX" hidden>
+        </div>
+
+        <p class="error" id="payError" hidden></p>
+
+        <label class="pix-label">Codigo PIX copia e cola</label>
+        <div class="pix-row">
+          <input id="pixCode" readonly value="">
+          <button type="button" id="copyPix">Copiar</button>
+        </div>
+
+        <div class="pay-actions">
+          <p class="wait" id="waitMsg">Aguardando confirmacao do PIX...</p>
+          <button type="button" class="ghost" id="confirmPay" hidden>Ja paguei</button>
+        </div>
+        <p class="hint">Recebedora: Luciana &middot; PIX PushinPay</p>
+      </div>
+
+      <div id="stepOk" hidden>
+        <div class="ok-mark">OK</div>
+        <h3>Pagamento confirmado</h3>
+        <p>Seu acesso foi liberado. Baixe o Telegram se ainda nao tiver e entre no grupo da Luciana.</p>
+        <div class="warn compact">
+          <div>
+            <strong>Baixe o app para ver o conteudo</strong>
+            <p>Play Store: app oficial do Telegram.</p>
+            <a class="store-btn play" href="https://play.google.com/store/apps/details?id=org.telegram.messenger" target="_blank" rel="noopener">Baixar na Play Store</a>
+          </div>
+        </div>
+        <a class="primary block" id="goTelegram" href="https://t.me/dannyyof">Abrir grupo no Telegram</a>
+        <p class="hint">Redirecionando automaticamente em <span id="count">5</span>s...</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Acesso digital ao canal Telegram da Luciana. Conteudo destinado a maiores de 18 anos. Pagamento via PIX PushinPay.</p>
+  </footer>
+
+  <script src="js/app.js?v=2"></script>
+</body>
 </html>
